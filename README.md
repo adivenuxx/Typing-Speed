@@ -28,14 +28,6 @@ Typing-Speed/
 2. Open `index.html` in your browser.
 3. Select difficulty and timer, and start typing!
 
-## 🌐 Live Preview
-
-(If hosted, add your live link here)
-
-## 📸 Screenshots
-
-*(Optional: Add screenshots of your app UI here)*
-
 ## 🙌 Contributing
 
 Pull requests are welcome. Feel free to fork and improve the project.
