@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <span class="site-name">Typing Practice</span>
+      <div class="header-actions">
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌓</button>
+        <div class="sign-in"><a href="signin.html">Sign In</a></div>
+      </div>
+    </div>
+    <div class="header-designer-bar"></div>
+  </header>
+  <main>
+    <div class="main-app-layout">
+      <aside class="sidebar">
+        <div class="big-timer">
+          <span id="timer">1:00</span>
+        </div>
+        <hr>
+        <h3>Level:</h3>
+        <div class="level-btns">
+          <button class="level-btn active" data-level="easy">Easy</button>
+          <button class="level-btn" data-level="medium">Medium</button>
+          <button class="level-btn" data-level="hard">Hard</button>
+        </div>
+        <h3>Select Timer:</h3>
+        <div class="time-btns">
+          <button class="time-btn active" data-minutes="1">1 min</button>
+          <button class="time-btn" data-minutes="2">2 min</button>
+          <button class="time-btn" data-minutes="5">5 min</button>
+        </div>
+      </aside>
+      <section class="writing-area" id="typing-section">
+        <div class="words-panel" id="words-panel">Try to type this fast.</div>
+        <textarea class="input-area" id="input-area"
+                  autocomplete="off" autocorrect="off"
+                  autocapitalize="off" spellcheck="false"
+                  rows="2" placeholder="Start typing here..." disabled></textarea>
+        <div class="writing-buttons">
+          <button class="start-btn writing-action" id="start-btn-main">Start</button>
+          <button class="see-result-btn writing-action" id="see-result" disabled>See Result</button>
+        </div>
+      </section>
+    </div>
+    <section class="result-section" id="result-section" style="display:none;">
+      <h2>Your Results</h2>
+      <div class="result-card">
+        <div><span class="result-label">WPM:</span> <span id="res-wpm">0</span></div>
+        <div><span class="result-label">Accuracy:</span> <span id="res-accuracy">0</span></div>
+        <div><span class="result-label">Net WPM:</span> <span id="res-net-wpm">0</span></div>
+        <div><span class="result-label">Mistakes:</span> <span id="res-mistakes">0</span></div>
+      </div>
+      <button class="restart-btn" id="restart-btn">Restart</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
